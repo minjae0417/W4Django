@@ -1,0 +1,30 @@
+.header {
+  margin: 15px;
+}
+
+a {
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+a:nth-of-type(1) {
+  color: red;
+  background-color: rgb(255, 230, 230);
+}
+
+a:nth-of-type(2) {
+  color: orange;
+  background-color: rgb(255, 245, 227);
+}
+
+a:nth-of-type(3) {
+  color: green;
+  background-color: rgb(229, 255, 229);
+}
+
+a:nth-of-type(4) {
+  color: blue;
+  background-color: rgb(228, 228, 255);
+}
