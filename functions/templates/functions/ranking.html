@@ -28,14 +28,14 @@
     </thead>
     <tbody>
       <!-- [코드 추가] Django Template에서 반복문 작성하기 -->
-      {%  %}
+      {% for language in languages %}
       <tr>
         <!-- [코드 추가] 반복 횟수를 1부터 표시하기 -->
-        <td>{{}}위</td>
+        <td>{{forloop.counter}}위</td>
         <!-- [코드 추가] URL 별칭 사용하기 -->
-        <td><a href="">{{}}</a></td>
+        <td><a href="{% url 'functions:language' language %}">{{language}}</a></td>
       </tr>
-      {%  %}
+      {% endfor %}
     </tbody>
   </table>
 {% endblock %}
